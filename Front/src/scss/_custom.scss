@@ -1,0 +1,241 @@
+// Here you can add other styles
+.ag-theme-quartz,
+.ag-theme-quartz-dark {
+  /* Changes the color of the grid text */
+  --ag-foreground-color: rgb(14, 68, 145);
+  /* Changes the color of the grid background */
+  --ag-background-color: rgb(241, 247, 255);
+  /* Changes the header color of the top row */
+  --ag-header-background-color: rgb(228, 237, 250);
+  /* Changes the hover color of the row*/
+  --ag-row-hover-color: rgb(216, 226, 255);
+}
+.rag-red {
+  background-color: #cc222244;
+}
+
+.darkHeader .ag-header-cell-label {
+  color: white;
+  /* Change text color */
+  background-color: #333;
+  /* Change background color */
+}
+
+.client_badge {
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  translate: -50%
+}
+
+.card-purple-blue {
+  // background: linear-gradient(45deg, #fab80e, #f76b1c);
+  background: linear-gradient(45deg, rgba(#fab80e , 1) 0%, rgba(#f76b1c, 1) 100%);
+  box-shadow: 0 5px 20px rgba(#fab80e, .3);
+}
+
+
+.card-red-pink {
+  background-image: linear-gradient(45deg, rgba(#f90202, 1) 0%, rgba(#fc9191, 1) 100%);
+  box-shadow: 0 5px 20px rgba(#f90202, .3);
+}
+
+
+.card-green-blue {
+  // background: linear-gradient(298deg, rgba(#03967a, 1) 0%, rgba(#12d488, 1) 100%);
+  background: linear-gradient(45deg, rgba(#038f15, 1) 0%, rgba(#95ed9b, 1) 100%);
+  box-shadow: 0 5px 20px rgba(#135401, .3);
+}
+
+
+.card-blue-pink {
+  background-image: linear-gradient(45deg, rgba(#0c20f9, 1) 0%, rgba(#ecaee3, 1) 100%);
+  box-shadow: 0 5px 20px rgba(#011052, .3);
+
+}
+
+.glowing-badge {
+  box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.8);
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.8);
+  }
+
+  to {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 1);
+  }
+}
+
+.custom-breadcrumb-item {
+  color: #fff !important;
+}
+
+.custom-breadcrumb-item:hover {
+  color: #ccc !important;
+}
+
+.Card-hover:hover{
+  box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.8);
+  color: #ccc !important;
+}
+
+.styled-box {
+  position: relative;
+  overflow: hidden; /* Hide overflow to contain pseudo-elements */
+  background-color: whitesmoke; /* Main background color */
+}
+
+.styled-box::before,
+.styled-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%; /* Adjust width as needed */
+  transition: transform 0.4s ease; /* Optional: Smooth transition */
+  // z-index: -1; /* Ensure pseudo-elements are behind main content */
+}
+
+.styled-box::before {
+  top: 0;
+  left: 0;
+  background-image: url(../assets/images/Logo_RSPM.png); /* First background image */
+  background-position: 10% 10%;
+  background-repeat: no-repeat;
+  background-color:#39056a; /* Blue color */
+  padding-top: 10px;
+  background-size: 20%; /* Adjust size as needed */
+  border-top-right-radius: 35%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 10%;
+  box-shadow: 0px 0px 5px 10px #d4d3d3;
+}
+
+.styled-box::after {
+  left: 0;
+  background-image: url(../assets/images/BG4.png); /* Second background image */
+  background-position: center; /* Position of the second image */
+  background-repeat: no-repeat;
+  background-size: 60%; /* Adjust size as needed */
+  border-radius: 0; /* No border radius, or adjust as needed */
+  z-index: 1;
+}
+
+.styled-box .content {
+  position: relative;
+  z-index: 2; /* Ensure content is above pseudo-elements */
+  padding: 20px;
+  color: #ffffff; /* Text color */
+  text-align: center;
+  font-size: 1.2em;
+}
+.custom-shadow {
+  box-shadow: 0 0 20px rgba(141, 138, 138, 0.966); /* Example: Red shadow with 50% opacity */
+}
+
+.styled-box1 {
+  position: relative;
+  overflow: hidden; /* Hide overflow to contain pseudo-elements */
+  background-color: whitesmoke; /* Main background color */
+}
+
+.styled-box1::before,
+.styled-box1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%; /* Adjust width as needed */
+  transition: transform 0.4s ease; /* Optional: Smooth transition */
+  // z-index: -1; /* Ensure pseudo-elements are behind main content */
+}
+
+.styled-box1::before {
+  top: 0;
+  left: 0;
+  background-image: url(../assets/images/Logo_RSPM.png); /* First background image */
+  background-position: 10% 10%;
+  background-repeat: no-repeat;
+  background-color:#8a2be2; /* Blue color */
+  padding-top: 10px;
+  background-size: 20%; /* Adjust size as needed */
+  border-top-right-radius: 35%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 10%;
+  box-shadow: 0px 0px 5px 10px #d4d3d3;
+}
+
+.styled-box1::after {
+  left: 0;
+  // background-image: url(../assets/images/BG4.png); /* Second background image */
+  background-position: center; /* Position of the second image */
+  background-repeat: no-repeat;
+  background-size: 60%; /* Adjust size as needed */
+  border-radius: 0; /* No border radius, or adjust as needed */
+  z-index: 1;
+}
+
+.styled-box1 .content {
+  position: relative;
+  z-index: 2; /* Ensure content is above pseudo-elements */
+  padding: 20px;
+  color: #ffffff; /* Text color */
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0%, 10% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.nav-link {
+  color: #000; /* Default text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* For active NavLink */
+.nav-link-active {
+  background-color: #02254e !important; /* Change to your desired active background color */
+  color: #fff !important; /* Change to your desired active text color */
+}
+
+/* For hover NavLink */
+.nav-link:hover {
+  background-color: #02254e !important; /* Change to your desired hover background color */
+  color: #fff !important; /* Change to your desired hover text color */
+}
+.nav-link:hover .nav-icon,
+.nav-link-active .nav-icon {
+  color: #fff !important;  /* Change this to your desired icon hover/active color */
+}
+
+.custom-app-header {
+  background-color: #02254e !important; /* Replace with your desired background color */
+  color: #ffffff;            /* Replace with your desired text color */
+}
